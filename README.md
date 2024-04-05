@@ -304,4 +304,9 @@ VisualStudio :
     Create a console application project,
     it links against Comdlg32.lib & Ole32.lib.
 
+Cmake :
+	add_subdirectory("TinyFileDialog")
+	include_directories("TinyFileDialog")
+
+	target_link_libraries(target PRIVATE TinyFileDialog::TinyFileDialog)
 </pre>
